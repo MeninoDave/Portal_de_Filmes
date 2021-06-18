@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Filmes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+    <div>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="title">
+                            <h1>Portal de Filmes</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Filmes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Séries</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Animes</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Mais
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <article>
+            <h1>Lançamentos!</h1>
+            <div class="clearfix">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/aJMfEz2cobI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              
+                <h2>
+                  Godzilla vs Kong
+                </h2>
+              
+                <p>
+                  As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
+                </p>
+              
+                <p>
+                  And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+                </p>
+              </div>
+        </article>
+        <br><br>
+        <article>
+            <h1>Pesquise por um filme</h1>
+    <input type="text" id="pesquisa"> <button onclick="pesquisaFilmes()" >Pesquisar</button>
+    <div class="container-fluid">
+        <div class="row" id="tela">
+            <div class="card col-md-4">
+                <img src="https://source.unsplash.com/random/200x300" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nome do Filme</h5>
+                    <p class="card-text">Ano</p>
+                    <p class="card-text">As informações sobre o filme aparecerão aqui</p>
+                    <a href=${num} class="btn btn-primary">Mais</a>
+                </div>
+            </div>
+            <div class="card col-md-4">
+                <img src="https://source.unsplash.com/random/200x300" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nome do Filme</h5>
+                    <p class="card-text">Ano</p>
+                    <p class="card-text">As informações sobre o filme aparecerão aqui</p>
+                    <a href=${num} class="btn btn-primary">Mais</a>
+                </div>
+            </div>
+            <div class="card col-md-4">
+                <img src="https://source.unsplash.com/random/200x300" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nome do Filme</h5>
+                    <p class="card-text">Ano</p>
+                    <p class="card-text">As informações sobre o filme aparecerão aqui</p>
+                    <a href=${num} class="btn btn-primary">Mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        </article>
+        <br><br><br>
+        <article>
+            <h1>Sobre suas séries favoritas</h1>
+            <input type="text" id="pesquisaS"> <button onclick="pesquisaSeries()" >Pesquisar</button>
+            <div class="container-fluid">
+                <div class="row" id="telaS">
+                    <div class="card col-md-4">
+                        <img src="https://source.unsplash.com/random/200x300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nome da Serie</h5>
+                            <p class="card-text">As informações sobre a série aparecerão aqui</p>
+                            <a href= ${linkSerie} class="btn btn-primary">Mais</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4">
+                        <img src="https://source.unsplash.com/random/200x300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nome da Serie</h5>
+                            <p class="card-text">As informações sobre a série aparecerão aqui</p>
+                            <a href= ${linkSerie} class="btn btn-primary">Mais</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4">
+                        <img src="https://source.unsplash.com/random/200x300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nome da Serie</h5>
+                            <p class="card-text">As informações sobre a série aparecerão aqui</p>
+                            <a href= ${linkSerie} class="btn btn-primary">Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        <article>
+            <div class="row">
+                <div class="col">
+            <h2>Últimas postagens</h2>
+            <div class="container">
+                <div class="row row-cols-1">
+                  <div class="col"><a href="#">Ipsum Lorem</a></div>
+                  <div class="col"><a href="#">Ipsum Lorem</a></div>
+                  <div class="col"><a href="#">Ipsum Lorem</a></div>
+                  <div class="col"><a href="#">Ipsum Lorem</a></div>
+                </div>
+              </div>
+            </div>
+                <div class="col">
+                    <h2>Sobre:</h2>
+                    <p>Este site ficticio foi feito com a intenção de passar na matéria de Desenvolvimento de Interfaces Web. Todas as imagens possuem direiros reservados. Se você está avaliando esse site, saiba que você é foda!</p>
+                </div>
+            </div>
+        </article>
+        <br><br>
+        <footer>
+            <p>2021 - Davi Braga - Ferramenta de pesquisa provida através do THEMOVIEDB </p>
+            <p>Espero que tenham gostado :)</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>  
+</body>
+</html>

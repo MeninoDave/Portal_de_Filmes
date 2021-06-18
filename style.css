@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    background-color:firebrick;
+    align-items: initial;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: firebrick;
+} 
+
+.title{
+    color: floralwhite;
+    background-color:firebrick;
+    text-align: left;
+}
+
+.clearfix{
+    align-items: center;
+    padding:center;
+}
+
+article{
+    size: auto;
+}
+
+body{
+    padding: auto;
+    background-color: floralwhite;
+    color: firebrick;
+}
+footer{
+    background-color: firebrick;
+    color: floralwhite;
+}

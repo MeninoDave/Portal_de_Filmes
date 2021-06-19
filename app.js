@@ -78,7 +78,7 @@ function exibeSeries () {
         let nomeSerie = data.results[j].title;
         let sinopse = data.results[j].overview;
         let imagem = IMG_PREFIX + data.results[j].poster_path;
-        let ano = data.results[j].release_date;
+        let anoserie = data.results[j].release_date;
         let idents = data.results[j].id;
         let linkSerie = 'https://themoviedb.org/tv/'+ idents;
 
@@ -86,7 +86,7 @@ function exibeSeries () {
             <img src="${imagem}" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">${nomeSerie}</h5>
-                <p class="card-text">${ano}</p>
+                <p class="card-text">${anoserie}</p>
                 <p class="card-text">${sinopse}</p>
                 <a href= ${linkSerie} class="btn btn-primary">Mais</a>
             </div>

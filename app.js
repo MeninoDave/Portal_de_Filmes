@@ -75,10 +75,10 @@ function exibeSeries () {
     let textoHTML = '';
 
     for (let j = 0; j < data.results.length; j++) {
-        let nomeSerie = data.results[j].title;
+        let nomeSerie = data.results[j].name;
         let sinopse = data.results[j].overview;
         let imagem = IMG_PREFIX + data.results[j].poster_path;
-        let anoserie = data.results[j].release_date;
+        let anoserie = data.results[j].first_air_date;
         let idents = data.results[j].id;
         let linkSerie = 'https://themoviedb.org/tv/'+ idents;
 
